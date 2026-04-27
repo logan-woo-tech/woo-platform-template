@@ -1,9 +1,7 @@
 import type { NextConfig } from 'next';
 
 const config: NextConfig = {
-  experimental: {
-    typedRoutes: true,
-  },
+  typedRoutes: true,
   transpilePackages: [
     '@template/auth',
     '@template/db',
