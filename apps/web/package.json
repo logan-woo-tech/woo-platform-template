@@ -11,30 +11,33 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "@tanstack/react-query": "^5.59.0",
+    "@template/ai": "workspace:*",
     "@template/auth": "workspace:*",
     "@template/db": "workspace:*",
-    "@template/ai": "workspace:*",
     "@template/types": "workspace:*",
     "@template/ui": "workspace:*",
     "@template/utils": "workspace:*",
-    "@supabase/supabase-js": "^2.45.0",
-    "@tanstack/react-query": "^5.59.0",
     "@trpc/client": "^11.0.0",
     "@trpc/react-query": "^11.0.0",
     "@trpc/server": "^11.0.0",
     "drizzle-orm": "^0.36.0",
     "next": "15.5.15",
+    "next-intl": "^4.9.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "superjson": "^2.2.0",
     "zod": "^3.23.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "eslint-config-next": "^15.5.0",
-    "tailwindcss": "^4.0.0",
+    "postcss": "^8.5.12",
+    "tailwindcss": "^4.2.4",
     "typescript": "5.9.3"
   }
 }
