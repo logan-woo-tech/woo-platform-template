@@ -1,30 +1,22 @@
 import { NextResponse } from 'next/server';
-
-type DependencyStatus = 'ok' | 'down';
-type OverallStatus = 'ok' | 'down' | 'degraded';
-
-function checkDb(): DependencyStatus {
-  // Placeholder until db setup in Sub-phase C
-  return 'ok';
-}
-
-function checkAi(): DependencyStatus {
-  // Placeholder until ai setup in Sub-phase D
-  return process.env.ANTHROPIC_API_KEY ? 'ok' : 'down';
-}
-
-function computeOverall(db: DependencyStatus, ai: DependencyStatus): OverallStatus {
-  if (db === 'ok' && ai === 'ok') return 'ok';
-  if (db === 'down') return 'down';
-  return 'degraded';
-}
+import { sql } from 'drizzle-orm';
+import { db } from '@template/db';
 
 export async function GET() {
   const start = Date.now();
 
-  const dbStatus = checkDb();
-  const aiStatus = checkAi();
-  const overallStatus = computeOverall(dbStatus, aiStatus);
+  let dbStatus: 'ok' | 'down' = 'ok';
+  try {
+    await db.execute(sql`SELECT 1`);
+  } catch (error) {
+    console.error('DB health check failed:', error);
+    dbStatus = 'down';
+  }
+
+  const aiStatus: 'ok' | 'down' = process.env.ANTHROPIC_API_KEY ? 'ok' : 'down';
+
+  const overallStatus =
+    dbStatus === 'ok' && aiStatus === 'ok' ? 'ok' : dbStatus === 'down' ? 'down' : 'degraded';
 
   return NextResponse.json(
     {

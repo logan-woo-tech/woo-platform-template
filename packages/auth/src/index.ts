@@ -1,2 +1,3 @@
-// Auth helpers — to be implemented in Sub-phase C
-export const PLACEHOLDER = 'auth-package';
+export { createServerClient } from './server';
+export { supabaseAdmin } from './admin';
+export { getUser, requireAuth, requireRole, getUserRole, AuthError, type Role } from './helpers';
