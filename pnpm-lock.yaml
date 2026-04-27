@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  drizzle-orm: 0.36.4
+  react: 19.1.0
+  react-dom: 19.1.0
+
 importers:
 
   .:
@@ -124,7 +129,7 @@ importers:
         specifier: ^11.0.0
         version: 11.16.0(typescript@5.9.3)
       drizzle-orm:
-        specifier: ^0.36.0
+        specifier: 0.36.4
         version: 0.36.4(@opentelemetry/api@1.9.1)(@types/react@19.2.14)(better-sqlite3@12.9.0)(pg@8.20.0)(postgres@3.4.9)(react@19.1.0)
       next:
         specifier: 15.5.15
@@ -196,7 +201,7 @@ importers:
         version: link:../types
       next:
         specifier: 15.5.15
-        version: 15.5.15(@opentelemetry/api@1.9.1)(react-dom@19.1.0(react@19.2.5))(react@19.2.5)
+        version: 15.5.15(@opentelemetry/api@1.9.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       server-only:
         specifier: ^0.0.1
         version: 0.0.1
@@ -211,8 +216,8 @@ importers:
         specifier: workspace:*
         version: link:../types
       drizzle-orm:
-        specifier: ^0.36.0
-        version: 0.36.4(@opentelemetry/api@1.9.1)(@types/react@19.2.14)(better-sqlite3@12.9.0)(pg@8.20.0)(postgres@3.4.9)(react@19.2.5)
+        specifier: 0.36.4
+        version: 0.36.4(@opentelemetry/api@1.9.1)(@types/react@19.2.14)(better-sqlite3@12.9.0)(pg@8.20.0)(postgres@3.4.9)(react@19.1.0)
       postgres:
         specifier: ^3.4.0
         version: 3.4.9
@@ -243,10 +248,10 @@ importers:
         specifier: workspace:*
         version: link:../utils
       react:
-        specifier: ^19.0.0
+        specifier: 19.1.0
         version: 19.1.0
       react-dom:
-        specifier: ^19.0.0
+        specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
       '@types/react':
@@ -2784,12 +2789,12 @@ packages:
   '@radix-ui/react-compose-refs@1.0.0':
     resolution: {integrity: sha512-0KaSv6sx787/hK3eF53iOkiSLwAGlFMx5lotrqD2pTjB18KbybKoEIgkNZTKC60YECDQTKGTRcDBILwZVqVKvA==}
     peerDependencies:
-      react: ^16.8 || ^17.0 || ^18.0
+      react: 19.1.0
 
   '@radix-ui/react-slot@1.0.1':
     resolution: {integrity: sha512-avutXAFL1ehGvAXtPquu0YK5oz6ctS474iM3vNGQIkswrVhdrS52e3uoMQBzZhNRAIE0jBnUyXWNmSjGHhCFcw==}
     peerDependencies:
-      react: ^16.8 || ^17.0 || ^18.0
+      react: 19.1.0
 
   '@react-native/assets-registry@0.76.0':
     resolution: {integrity: sha512-U8KLV+PC/cRIiDpb1VbeGuEfKq2riZZtNVLp1UOyKWfPbWWu8j6Fr95w7j+nglp41z70iBeF2OmCiVnRvtNklA==}
@@ -2877,7 +2882,7 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       '@types/react': ^18.2.6
-      react: '*'
+      react: 19.1.0
       react-native: '*'
     peerDependenciesMeta:
       '@types/react':
@@ -2887,7 +2892,7 @@ packages:
     resolution: {integrity: sha512-Ao/yYlrpr0cwYYGxt9FDMQk+tTSHNm4WTaszyhroINLdoEMuKH19k1tGFdYbRBKHJx1UIH8kD+EZTYW1w6LL3Q==}
     peerDependencies:
       '@react-navigation/native': ^7.2.2
-      react: '>= 18.2.0'
+      react: 19.1.0
       react-native: '*'
       react-native-safe-area-context: '>= 4.0.0'
       react-native-screens: '>= 4.0.0'
@@ -2895,14 +2900,14 @@ packages:
   '@react-navigation/core@7.17.2':
     resolution: {integrity: sha512-Rt2OZwcgOmjv401uLGAKaRM6xo0fiBce/A7LfRHI1oe5FV+KooWcgAoZ2XOtgKj6UzVMuQWt3b2e6rxo/mDJRA==}
     peerDependencies:
-      react: '>= 18.2.0'
+      react: 19.1.0
 
   '@react-navigation/elements@2.9.15':
     resolution: {integrity: sha512-cyz/pPiyyC6gaTVLsGFc1g0MYgrmuCFqklAWGXMWPscr5YU3ui94vPI4vnZwcsEy0T758TQWLzmS5XudZeRKcA==}
     peerDependencies:
       '@react-native-masked-view/masked-view': '>= 0.2.0'
       '@react-navigation/native': ^7.2.2
-      react: '>= 18.2.0'
+      react: 19.1.0
       react-native: '*'
       react-native-safe-area-context: '>= 4.0.0'
     peerDependenciesMeta:
@@ -2913,7 +2918,7 @@ packages:
     resolution: {integrity: sha512-dUfpkrVeVKKV8iqXsmoUp3Rv0iH3YaB3eZwScru/FlcqAp/r3/qA6zEXkGX9hZK+/ziWAPFrf1frBSNbgOYSFQ==}
     peerDependencies:
       '@react-navigation/native': ^7.2.2
-      react: '>= 18.2.0'
+      react: 19.1.0
       react-native: '*'
       react-native-safe-area-context: '>= 4.0.0'
       react-native-screens: '>= 4.0.0'
@@ -2921,7 +2926,7 @@ packages:
   '@react-navigation/native@7.2.2':
     resolution: {integrity: sha512-kem1Ko2BcbAjmbQIv66dNmr6EtfDut3QU0qjsVhMnLLhktwyXb6FzZYp8gTrUb6AvkAbaJoi+BF5Pl55pAUa5w==}
     peerDependencies:
-      react: '>= 18.2.0'
+      react: 19.1.0
       react-native: '*'
 
   '@react-navigation/routers@7.5.3':
@@ -3367,7 +3372,7 @@ packages:
   '@tanstack/react-query@5.100.5':
     resolution: {integrity: sha512-aNwj1mi2v2bQ9IxkyR1grLOUkv3BYWoykHy9KDyLNbjC3tsahbOHJibK+Wjtr1wRhG59/AvJhiJG5OlthaCgJA==}
     peerDependencies:
-      react: ^18 || ^19
+      react: 19.1.0
 
   '@tokenizer/inflate@0.4.1':
     resolution: {integrity: sha512-2mAv+8pkG6GIZiF1kNg1jAjh27IDxEPKwdGul3snfztFerfPGI1LjDezZp3i7BElXompqEtPmoPx6c2wgtWsOA==}
@@ -3389,7 +3394,7 @@ packages:
       '@tanstack/react-query': ^5.80.3
       '@trpc/client': 11.16.0
       '@trpc/server': 11.16.0
-      react: '>=18.2.0'
+      react: 19.1.0
       typescript: '>=5.7.2'
 
   '@trpc/server@11.16.0':
@@ -4761,7 +4766,7 @@ packages:
       pg: '>=8'
       postgres: '>=3'
       prisma: '*'
-      react: '>=18'
+      react: 19.1.0
       sql.js: '>=1'
       sqlite3: '>=5'
     peerDependenciesMeta:
@@ -4818,98 +4823,6 @@ packages:
       prisma:
         optional: true
       react:
-        optional: true
-      sql.js:
-        optional: true
-      sqlite3:
-        optional: true
-
-  drizzle-orm@0.45.2:
-    resolution: {integrity: sha512-kY0BSaTNYWnoDMVoyY8uxmyHjpJW1geOmBMdSSicKo9CIIWkSxMIj2rkeSR51b8KAPB7m+qysjuHme5nKP+E5Q==}
-    peerDependencies:
-      '@aws-sdk/client-rds-data': '>=3'
-      '@cloudflare/workers-types': '>=4'
-      '@electric-sql/pglite': '>=0.2.0'
-      '@libsql/client': '>=0.10.0'
-      '@libsql/client-wasm': '>=0.10.0'
-      '@neondatabase/serverless': '>=0.10.0'
-      '@op-engineering/op-sqlite': '>=2'
-      '@opentelemetry/api': ^1.4.1
-      '@planetscale/database': '>=1.13'
-      '@prisma/client': '*'
-      '@tidbcloud/serverless': '*'
-      '@types/better-sqlite3': '*'
-      '@types/pg': '*'
-      '@types/sql.js': '*'
-      '@upstash/redis': '>=1.34.7'
-      '@vercel/postgres': '>=0.8.0'
-      '@xata.io/client': '*'
-      better-sqlite3: '>=7'
-      bun-types: '*'
-      expo-sqlite: '>=14.0.0'
-      gel: '>=2'
-      knex: '*'
-      kysely: '*'
-      mysql2: '>=2'
-      pg: '>=8'
-      postgres: '>=3'
-      prisma: '*'
-      sql.js: '>=1'
-      sqlite3: '>=5'
-    peerDependenciesMeta:
-      '@aws-sdk/client-rds-data':
-        optional: true
-      '@cloudflare/workers-types':
-        optional: true
-      '@electric-sql/pglite':
-        optional: true
-      '@libsql/client':
-        optional: true
-      '@libsql/client-wasm':
-        optional: true
-      '@neondatabase/serverless':
-        optional: true
-      '@op-engineering/op-sqlite':
-        optional: true
-      '@opentelemetry/api':
-        optional: true
-      '@planetscale/database':
-        optional: true
-      '@prisma/client':
-        optional: true
-      '@tidbcloud/serverless':
-        optional: true
-      '@types/better-sqlite3':
-        optional: true
-      '@types/pg':
-        optional: true
-      '@types/sql.js':
-        optional: true
-      '@upstash/redis':
-        optional: true
-      '@vercel/postgres':
-        optional: true
-      '@xata.io/client':
-        optional: true
-      better-sqlite3:
-        optional: true
-      bun-types:
-        optional: true
-      expo-sqlite:
-        optional: true
-      gel:
-        optional: true
-      knex:
-        optional: true
-      kysely:
-        optional: true
-      mysql2:
-        optional: true
-      pg:
-        optional: true
-      postgres:
-        optional: true
-      prisma:
         optional: true
       sql.js:
         optional: true
@@ -5269,7 +5182,7 @@ packages:
     resolution: {integrity: sha512-TL60LmMBGVzs3NQcO8ylWqBumMh4sx0lmeJsn7+9C88fylGDhyyVnKZ1PyTXo9CVDBkndutZx2JUEQWM9BaiXw==}
     peerDependencies:
       expo: '*'
-      react: '*'
+      react: 19.1.0
       react-native: '*'
 
   expo-constants@17.0.8:
@@ -5288,18 +5201,18 @@ packages:
     resolution: {integrity: sha512-eAP5hyBgC8gafFtprsz0HMaB795qZfgJWqTmU0NfbSin1wUuVySFMEPMOrTkTgmazU73v4Cb4x7p86jY1XXYUw==}
     peerDependencies:
       expo: '*'
-      react: '*'
+      react: 19.1.0
 
   expo-keep-awake@14.0.3:
     resolution: {integrity: sha512-6Jh94G6NvTZfuLnm2vwIpKe3GdOiVBuISl7FI8GqN0/9UOg9E0WXXp5cDcfAG8bn80RfgLJS8P7EPUGTZyOvhg==}
     peerDependencies:
       expo: '*'
-      react: '*'
+      react: 19.1.0
 
   expo-linking@7.0.5:
     resolution: {integrity: sha512-3KptlJtcYDPWohk0MfJU75MJFh2ybavbtcSd84zEPfw9s1q3hjimw3sXnH03ZxP54kiEWldvKmmnGcVffBDB1g==}
     peerDependencies:
-      react: '*'
+      react: 19.1.0
       react-native: '*'
 
   expo-modules-autolinking@2.0.8:
@@ -5334,7 +5247,7 @@ packages:
     peerDependencies:
       '@expo/dom-webview': '*'
       '@expo/metro-runtime': '*'
-      react: '*'
+      react: 19.1.0
       react-native: '*'
       react-native-webview: '*'
     peerDependenciesMeta:
@@ -5954,7 +5867,7 @@ packages:
     engines: {node: '>=20'}
     peerDependencies:
       '@types/react': '>=19.0.0'
-      react: '>=19.0.0'
+      react: 19.1.0
       react-devtools-core: '>=6.1.2'
     peerDependenciesMeta:
       '@types/react':
@@ -6964,8 +6877,8 @@ packages:
       '@opentelemetry/api': ^1.1.0
       '@playwright/test': ^1.51.1
       babel-plugin-react-compiler: '*'
-      react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
-      react-dom: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+      react: 19.1.0
+      react-dom: 19.1.0
       sass: ^1.3.0
     peerDependenciesMeta:
       '@opentelemetry/api':
@@ -7639,7 +7552,7 @@ packages:
   react-dom@19.1.0:
     resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
     peerDependencies:
-      react: ^19.1.0
+      react: 19.1.0
 
   react-fast-compare@3.2.2:
     resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
@@ -7648,13 +7561,13 @@ packages:
     resolution: {integrity: sha512-r4F0Sec0BLxWicc7HEyo2x3/2icUTrRmDjaaRyzzn+7aDyFZliszMDOgLVwSnQnYENOlL1o569Ze2HZefk8clA==}
     engines: {node: '>=10'}
     peerDependencies:
-      react: '>=17.0.0'
+      react: 19.1.0
 
   react-helmet-async@1.3.0:
     resolution: {integrity: sha512-9jZ57/dAn9t3q6hneQS0wukqC2ENOBgMNVEhb/ZG9ZSxUetzVIw4iAmEU38IaVg3QGYauQPhSeUTuIUtFglWpg==}
     peerDependencies:
-      react: ^16.6.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
+      react: 19.1.0
+      react-dom: 19.1.0
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -7668,24 +7581,24 @@ packages:
   react-native-helmet-async@2.0.4:
     resolution: {integrity: sha512-m3CkXWss6B1dd6mCMleLpzDCJJGGaHOLQsUzZv8kAASJmMfmVT4d2fx375iXKTRWT25ThBfae3dECuX5cq/8hg==}
     peerDependencies:
-      react: ^16.6.0 || ^17.0.0 || ^18.0.0
+      react: 19.1.0
 
   react-native-is-edge-to-edge@1.3.1:
     resolution: {integrity: sha512-NIXU/iT5+ORyCc7p0z2nnlkouYKX425vuU1OEm6bMMtWWR9yvb+Xg5AZmImTKoF9abxCPqrKC3rOZsKzUYgYZA==}
     peerDependencies:
-      react: '*'
+      react: 19.1.0
       react-native: '*'
 
   react-native-safe-area-context@5.7.0:
     resolution: {integrity: sha512-/9/MtQz8ODphjsLdZ+GZAIcC/RtoqW9EeShf7Uvnfgm/pzYrJ75y3PV/J1wuAV1T5Dye5ygq4EAW20RoBq0ABQ==}
     peerDependencies:
-      react: '*'
+      react: 19.1.0
       react-native: '*'
 
   react-native-screens@4.24.0:
     resolution: {integrity: sha512-SyoiGaDofiyGPFrUkn1oGsAzkRuX1JUvTD9YQQK3G1JGQ5VWkvHgYSsc1K9OrLsDQxN7NmV71O0sHCAh8cBetA==}
     peerDependencies:
-      react: '*'
+      react: 19.1.0
       react-native: '*'
 
   react-native@0.76.0:
@@ -7694,7 +7607,7 @@ packages:
     hasBin: true
     peerDependencies:
       '@types/react': ^18.2.6
-      react: ^18.2.0
+      react: 19.1.0
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -7703,7 +7616,7 @@ packages:
     resolution: {integrity: sha512-KetWRytFv1epdpJc3J4G75I4WrplZE5jOL7Yq0p34+OVOKF4Se7WrdIdVC45XsSSmUTlht2FM/fM1FZb1mfQeA==}
     engines: {node: '>=0.10.0'}
     peerDependencies:
-      react: ^19.2.0
+      react: 19.1.0
 
   react-refresh@0.14.2:
     resolution: {integrity: sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==}
@@ -7711,10 +7624,6 @@ packages:
 
   react@19.1.0:
     resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
-    engines: {node: '>=0.10.0'}
-
-  react@19.2.5:
-    resolution: {integrity: sha512-llUJLzz1zTUBrskt2pwZgLq59AemifIftw4aB7JxOqf1HY2FDaGDxgwpAPVzHU1kdWabH7FauP4i1oEeer2WCA==}
     engines: {node: '>=0.10.0'}
 
   read-excel-file@9.0.6:
@@ -8312,7 +8221,7 @@ packages:
     peerDependencies:
       '@babel/core': '*'
       babel-plugin-macros: '*'
-      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0'
+      react: 19.1.0
     peerDependenciesMeta:
       '@babel/core':
         optional: true
@@ -8685,12 +8594,12 @@ packages:
   use-latest-callback@0.2.6:
     resolution: {integrity: sha512-FvRG9i1HSo0wagmX63Vrm8SnlUU3LMM3WyZkQ76RnslpBrX694AdG4A0zQBx2B3ZifFA0yv/BaEHGBnEax5rZg==}
     peerDependencies:
-      react: '>=16.8'
+      react: 19.1.0
 
   use-sync-external-store@1.6.0:
     resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react: 19.1.0
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
@@ -14626,22 +14535,6 @@ snapshots:
       postgres: 3.4.9
       react: 19.1.0
 
-  drizzle-orm@0.36.4(@opentelemetry/api@1.9.1)(@types/react@19.2.14)(better-sqlite3@12.9.0)(pg@8.20.0)(postgres@3.4.9)(react@19.2.5):
-    optionalDependencies:
-      '@opentelemetry/api': 1.9.1
-      '@types/react': 19.2.14
-      better-sqlite3: 12.9.0
-      pg: 8.20.0
-      postgres: 3.4.9
-      react: 19.2.5
-
-  drizzle-orm@0.45.2(@opentelemetry/api@1.9.1)(better-sqlite3@12.9.0)(pg@8.20.0)(postgres@3.4.9):
-    optionalDependencies:
-      '@opentelemetry/api': 1.9.1
-      better-sqlite3: 12.9.0
-      pg: 8.20.0
-      postgres: 3.4.9
-
   dunder-proto@1.0.1:
     dependencies:
       call-bind-apply-helpers: 1.0.2
@@ -16002,7 +15895,7 @@ snapshots:
       jsonwebtoken: 9.0.3
       load-esm: 1.0.3
       mime-types: 2.1.35
-      retry-axios: 2.6.0(axios@1.15.2(debug@4.4.3))
+      retry-axios: 2.6.0(axios@1.15.2)
       tough-cookie: 4.1.4
     transitivePeerDependencies:
       - supports-color
@@ -16053,7 +15946,7 @@ snapshots:
 
   ini@4.1.1: {}
 
-  ink@6.8.0(@types/react@19.2.14)(react@19.2.5):
+  ink@6.8.0(@types/react@19.2.14)(react@19.1.0):
     dependencies:
       '@alcalzone/ansi-tokenize': 0.2.5
       ansi-escapes: 7.3.0
@@ -16068,8 +15961,8 @@ snapshots:
       indent-string: 5.0.0
       is-in-ci: 2.0.0
       patch-console: 2.0.0
-      react: 19.2.5
-      react-reconciler: 0.33.0(react@19.2.5)
+      react: 19.1.0
+      react-reconciler: 0.33.0(react@19.1.0)
       scheduler: 0.27.0
       signal-exit: 3.0.7
       slice-ansi: 8.0.0
@@ -17215,30 +17108,6 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  next@15.5.15(@opentelemetry/api@1.9.1)(react-dom@19.1.0(react@19.2.5))(react@19.2.5):
-    dependencies:
-      '@next/env': 15.5.15
-      '@swc/helpers': 0.5.15
-      caniuse-lite: 1.0.30001791
-      postcss: 8.4.31
-      react: 19.2.5
-      react-dom: 19.1.0(react@19.2.5)
-      styled-jsx: 5.1.6(react@19.2.5)
-    optionalDependencies:
-      '@next/swc-darwin-arm64': 15.5.15
-      '@next/swc-darwin-x64': 15.5.15
-      '@next/swc-linux-arm64-gnu': 15.5.15
-      '@next/swc-linux-arm64-musl': 15.5.15
-      '@next/swc-linux-x64-gnu': 15.5.15
-      '@next/swc-linux-x64-musl': 15.5.15
-      '@next/swc-win32-arm64-msvc': 15.5.15
-      '@next/swc-win32-x64-msvc': 15.5.15
-      '@opentelemetry/api': 1.9.1
-      sharp: 0.34.5
-    transitivePeerDependencies:
-      - '@babel/core'
-      - babel-plugin-macros
-
   nice-try@1.0.5: {}
 
   node-abi@3.89.0:
@@ -17871,7 +17740,7 @@ snapshots:
       debounce: 3.0.0
       dedent: 1.7.2
       dotenv: 17.4.2
-      drizzle-orm: 0.45.2(@opentelemetry/api@1.9.1)(better-sqlite3@12.9.0)(pg@8.20.0)(postgres@3.4.9)
+      drizzle-orm: 0.36.4(@opentelemetry/api@1.9.1)(@types/react@19.2.14)(better-sqlite3@12.9.0)(pg@8.20.0)(postgres@3.4.9)(react@19.1.0)
       execa: 9.6.1
       express: 5.2.1
       exsolve: 1.0.8
@@ -17882,7 +17751,7 @@ snapshots:
       gcp-metadata: 8.1.2
       glob: 13.0.6
       http-z: 8.1.1
-      ink: 6.8.0(@types/react@19.2.14)(react@19.2.5)
+      ink: 6.8.0(@types/react@19.2.14)(react@19.1.0)
       istextorbinary: 9.5.0
       jks-js: 1.1.6
       js-rouge: 3.2.0
@@ -17904,7 +17773,7 @@ snapshots:
       proxy-agent: 8.0.1
       proxy-from-env: 2.1.0
       python-shell: 5.0.0
-      react: 19.2.5
+      react: 19.1.0
       rfdc: 1.4.1
       rxjs: 7.8.2
       semver: 7.7.4
@@ -17978,7 +17847,6 @@ snapshots:
       - '@types/pg'
       - '@types/react'
       - '@types/sql.js'
-      - '@upstash/redis'
       - '@vercel/postgres'
       - '@xata.io/client'
       - aws-crt
@@ -17988,7 +17856,6 @@ snapshots:
       - debug
       - encoding
       - expo-sqlite
-      - gel
       - kerberos
       - knex
       - kysely
@@ -18137,11 +18004,6 @@ snapshots:
       react: 19.1.0
       scheduler: 0.26.0
 
-  react-dom@19.1.0(react@19.2.5):
-    dependencies:
-      react: 19.2.5
-      scheduler: 0.26.0
-
   react-fast-compare@3.2.2: {}
 
   react-freeze@1.0.4(react@19.1.0):
@@ -18240,16 +18102,14 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  react-reconciler@0.33.0(react@19.2.5):
+  react-reconciler@0.33.0(react@19.1.0):
     dependencies:
-      react: 19.2.5
+      react: 19.1.0
       scheduler: 0.27.0
 
   react-refresh@0.14.2: {}
 
   react@19.1.0: {}
-
-  react@19.2.5: {}
 
   read-excel-file@9.0.6:
     dependencies:
@@ -18403,7 +18263,7 @@ snapshots:
       onetime: 7.0.0
       signal-exit: 4.1.0
 
-  retry-axios@2.6.0(axios@1.15.2(debug@4.4.3)):
+  retry-axios@2.6.0(axios@1.15.2):
     dependencies:
       axios: 1.15.2(debug@4.4.3)
     optional: true
@@ -18985,11 +18845,6 @@ snapshots:
     dependencies:
       client-only: 0.0.1
       react: 19.1.0
-
-  styled-jsx@5.1.6(react@19.2.5):
-    dependencies:
-      client-only: 0.0.1
-      react: 19.2.5
 
   sucrase@3.35.0:
     dependencies:
