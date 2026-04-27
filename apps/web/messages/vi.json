@@ -22,5 +22,10 @@
     "buttons_section": "Các loại nút",
     "inputs_section": "Các trường nhập",
     "cards_section": "Các thẻ"
+  },
+  "consent": {
+    "message": "Chúng tôi sử dụng cookies và phân tích để cải thiện trải nghiệm. Bạn có đồng ý không?",
+    "accept": "Đồng ý",
+    "reject": "Từ chối"
   }
 }

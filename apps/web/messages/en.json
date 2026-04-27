@@ -22,5 +22,10 @@
     "buttons_section": "Buttons",
     "inputs_section": "Inputs",
     "cards_section": "Cards"
+  },
+  "consent": {
+    "message": "We use cookies and analytics to improve your experience. Do you consent?",
+    "accept": "Accept",
+    "reject": "Reject"
   }
 }
