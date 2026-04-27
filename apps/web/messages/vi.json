@@ -1,0 +1,26 @@
+{
+  "common": {
+    "buttons": {
+      "submit": "Gửi",
+      "cancel": "Huỷ",
+      "save": "Lưu",
+      "delete": "Xoá",
+      "back": "Quay lại"
+    },
+    "errors": {
+      "required": "Trường bắt buộc",
+      "invalid_email": "Email không hợp lệ"
+    },
+    "loading": "Đang tải..."
+  },
+  "home": {
+    "title": "Chào mừng đến với nền tảng",
+    "description": "Đây là trang chủ template."
+  },
+  "playground": {
+    "title": "Playground các thành phần",
+    "buttons_section": "Các loại nút",
+    "inputs_section": "Các trường nhập",
+    "cards_section": "Các thẻ"
+  }
+}

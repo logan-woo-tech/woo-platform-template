@@ -1,0 +1,26 @@
+{
+  "common": {
+    "buttons": {
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "save": "Save",
+      "delete": "Delete",
+      "back": "Back"
+    },
+    "errors": {
+      "required": "Required field",
+      "invalid_email": "Invalid email"
+    },
+    "loading": "Loading..."
+  },
+  "home": {
+    "title": "Welcome to the platform",
+    "description": "This is the template homepage."
+  },
+  "playground": {
+    "title": "Component Playground",
+    "buttons_section": "Buttons",
+    "inputs_section": "Inputs",
+    "cards_section": "Cards"
+  }
+}
