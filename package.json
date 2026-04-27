@@ -21,6 +21,7 @@
     "verify:anthropic-pin": "tsx scripts/verify-anthropic-pin.ts",
     "verify:readmes": "tsx scripts/verify-readmes.ts",
     "verify:all": "pnpm verify:locales && pnpm verify:no-db-push && pnpm verify:anthropic-pin && pnpm verify:readmes",
+    "setup": "tsx scripts/setup.ts",
     "prepare": "husky"
   },
   "devDependencies": {
