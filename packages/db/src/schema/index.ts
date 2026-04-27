@@ -1,4 +1,2 @@
-// Schema exports — add tables here as created
-// Example: export * from './users';
-
-export const PLACEHOLDER = 'db-schema-placeholder';
+export * from './user-roles';
+export * from './ai-call-log';
