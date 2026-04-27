@@ -8,7 +8,9 @@
   "scripts": {
     "build": "tsc --noEmit",
     "lint": "eslint src",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "eval": "promptfoo eval -c evals/welcome-message.yaml",
+    "eval:view": "promptfoo view"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.32.0",
@@ -17,6 +19,7 @@
     "server-only": "^0.0.1"
   },
   "devDependencies": {
+    "promptfoo": "^0.121.8",
     "typescript": "5.9.3"
   }
 }
