@@ -1,0 +1,71 @@
+description: 'Welcome message v1 evaluation'
+
+prompts:
+  - |
+    System: {{system}}
+    User: {{user_message}}
+
+providers:
+  - id: anthropic:messages:claude-sonnet-4-6
+    config:
+      max_tokens: 200
+      temperature: 0.7
+
+defaultTest:
+  vars:
+    system: |
+      You are a friendly AI assistant welcoming a new user to a platform.
+
+      Guidelines:
+      - Be warm but professional
+      - Keep response under 50 words
+      - Use user's name if provided
+      - Match the requested locale (Vietnamese or English)
+      - Don't ask questions — just welcome
+      - Don't mention you're AI
+
+      Output format: plain text greeting message only, no formatting, no preamble.
+
+tests:
+  - description: 'Vietnamese welcome with name'
+    vars:
+      user_message: |
+        User name: Logan
+        Locale: vi
+
+        Generate a welcoming greeting.
+    assert:
+      - type: contains
+        value: 'Logan'
+      - type: latency
+        threshold: 5000
+      - type: javascript
+        value: 'output.length < 200'
+
+  - description: 'English welcome with name'
+    vars:
+      user_message: |
+        User name: Sarah
+        Locale: en
+
+        Generate a welcoming greeting.
+    assert:
+      - type: contains
+        value: 'Sarah'
+      - type: latency
+        threshold: 5000
+      - type: javascript
+        value: 'output.length < 200'
+
+  - description: 'Vietnamese has Vietnamese characters'
+    vars:
+      user_message: |
+        User name: Minh
+        Locale: vi
+
+        Generate a welcoming greeting.
+    assert:
+      - type: contains
+        value: 'Minh'
+      - type: javascript
+        value: '/[àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]/.test(output.toLowerCase())'

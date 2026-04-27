@@ -15,3 +15,5 @@ export { callAI, type AICallOptions, type AICallResult } from './call';
 export { trackAICall, type AICallTrackingData } from './tracking';
 
 export { withFallback } from './degraded';
+
+export { generateWelcomeMessage, type WelcomeMessageInput } from './prompts/welcome-message-v1';

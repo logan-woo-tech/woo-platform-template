@@ -42,3 +42,7 @@ coverage/
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Promptfoo cache
+.promptfoo/
+packages/ai/.promptfoo/
